@@ -23,11 +23,12 @@ Entrez la commande suivante dans le terminal :
   ```$ sudo apt-get install ros-melodic-navigation``` 
   
 * Créer un environnement de travail:
+  
   Entrer les commandes suivantes dans le terminal:
   
   ```$ mkdir -p ~/catkin_ws/src
-$ cd ~/catkin_ws/
-$ catkin_make ```
+  ```$ cd ~/catkin_ws/
+  ```$ catkin_make ```
 
 
 ### reda
