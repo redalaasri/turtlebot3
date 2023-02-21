@@ -20,7 +20,15 @@ Remplacez <distro> par la version de ROS que vous avez installée (par exemple, 
 
 Entrez la commande suivante dans le terminal :  
   
-  ```$ sudo apt-get install ros-<distro>-navigation``` 
+  ```$ sudo apt-get install ros-melodic-navigation``` 
+  
+* Créer un environnement de travail:
+  Entrer les commandes suivantes dans le terminal:
+  
+  ```$ mkdir -p ~/catkin_ws/src
+$ cd ~/catkin_ws/
+$ catkin_make ```
+
 
 ### reda
 
