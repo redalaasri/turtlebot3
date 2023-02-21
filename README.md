@@ -33,6 +33,19 @@ Entrez la commande suivante dans le terminal :
   $ catkin_make
   ``` 
 
+* Télécharger les packages nécessaires :
+
+Entrez les commandes suivantes dans un terminal :
+  
+``` 
+  $ cd ~/catkin_ws/src
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ git clone https://github.com/turtlebot/turtlebot.git
+$ git clone https://github.com/turtlebot/turtlebot_msgs.git
+$ git clone https://github.com/turtlebot/turtlebot_interactions.git
+$ cd ~/catkin_ws/
+$ catkin_make
+```
 ### reda
 
 #### Reda
