@@ -27,8 +27,8 @@ Entrez la commande suivante dans le terminal :
   Entrer les commandes suivantes dans le terminal:
   
   ```$ mkdir -p ~/catkin_ws/src
-  ```$ cd ~/catkin_ws/
-  ```$ catkin_make ```
+  $ cd ~/catkin_ws/
+  $ catkin_make ```
 
 
 ### reda
