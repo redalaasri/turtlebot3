@@ -9,7 +9,9 @@ Pour ROS 18.04, suivez les instructions sur le site officiel : http://wiki.ros.o
 Ouvrez un terminal et entrez les commandes suivantes :
 
 $ sudo apt-get update
-$ sudo apt-get install ros-<distro>-turtlebot3
+
+$ sudo apt-get install ros-melodic-turtlebot3
+
 $ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
 
 ### reda
