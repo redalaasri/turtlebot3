@@ -25,11 +25,13 @@ Entrez la commande suivante dans le terminal :
 * Créer un environnement de travail:
   
   Entrer les commandes suivantes dans le terminal:
+
   
   ``` 
   $ mkdir -p ~/catkin_ws/src
   $ cd ~/catkin_ws/
-  $ catkin_make``` 
+  $ catkin_make
+  ``` 
 
 ### reda
 
