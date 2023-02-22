@@ -129,10 +129,12 @@ Pour développer le noeud ROS permettant de souscrire à un topic MQTT et de pub
    
 * Création du noeud ROS en pyhton:
    
-   ``` 
+``` 
    
 import rospy
+   
 from geometry_msgs.msg import Twist
+   
 import paho.mqtt.client as mqtt
 
 class MqttRosBridgeNode:
@@ -168,6 +170,7 @@ if __name__ == '__main__':
         MqttRosBridgeNode()
     except rospy.ROSInterruptException:
         pass
+   
 ``` 
 
 Le format du message MQTT représentant la consigne de vitesse est défini comme une chaîne de caractères avec deux valeurs séparées par une virgule. La première valeur représente la vitesse linéaire et la deuxième valeur représente la vitesse angulaire. Le nœud ROS se connectera à ce topic MQTT et extraira les deux valeurs pour les publier sur le topic ROS /cmd_web à l'aide d'un objet Twist.
