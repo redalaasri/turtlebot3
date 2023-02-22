@@ -217,6 +217,9 @@ while True:
 ``` 
 
    Ce code se connecte au broker MQTT sur "localhost" et publie des messages sur les topics "robot/cmd_vel" et "robot/cmd_rot" en fonction des touches directionnelles appuyées
+   
+   N.B: J'ai essayé de téléchargé map.pgm, mais j'ai pas pu (le délai est terminé)
+   
   
 ### Le temps dans chaque question:
    
