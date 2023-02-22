@@ -49,6 +49,11 @@ $ catkin_make
 
   <img width="960" alt="image" src="https://user-images.githubusercontent.com/126022726/220484820-32c6fd4e-2bd1-4a46-b9e2-e36221df86ca.png">
 
+ 
+* Contrôler le robot en téléopération (clavier) :
+
+Ouvrez un autre terminal et entrez la commande suivante :
+  ```$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch``` 
   ### reda
 
 #### Reda
