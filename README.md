@@ -108,7 +108,7 @@ if __name__ == '__main__':
 Le nœud "CommandMux" souscrit aux sujets "/cmd_local" et "/cmd_web" pour recevoir les commandes de vitesse provenant de ces sources. Lorsqu'une commande est reçue, le nœud vérifie si la source active correspond à la source de la commande, et si c'est le cas, il publie la commande sur le sujet "/cmd_mux".
 
 La méthode "switch_source" peut être appelée pour changer la source active de la commande, ce qui permet de basculer entre les sources de contrôle. Par exemple, pour basculer vers la source "cmd_web", vous pouvez appeler:
-  ``` mux.switch_source("web") 
+  ``` mux.switch_source("web") ```
   
 Cela mettra à jour la variable "active_source" dans le nœud et la prochaine commande de vitesse provenant de "/cmd_web" sera publiée sur le sujet "/cmd_mux".
   ### reda
