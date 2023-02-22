@@ -67,7 +67,43 @@ Ouvrez un autre terminal et entrez la commande suivante :
   
 ## Question 2:
   
+N.B: J'ai choisi de programmer avec Python
 
+Il faut créer un nœud ROS qui multiplexe les commandes de vitesse provenant de deux sources différentes, "cmd_local" et "cmd_web":
+
+```
+  #!/usr/bin/env python
+
+import rospy
+from std_msgs.msg import Float32
+
+class CommandMux:
+
+    def __init__(self):
+        self.cmd_mux_pub = rospy.Publisher('/cmd_mux', Float32, queue_size=1)
+        self.cmd_local_sub = rospy.Subscriber('/cmd_local', Float32, self.local_callback)
+        self.cmd_web_sub = rospy.Subscriber('/cmd_web', Float32, self.web_callback)
+        self.active_source = "local" # set initial source
+
+    def local_callback(self, msg):
+        if self.active_source == "local":
+            self.cmd_mux_pub.publish(msg.data)
+
+    def web_callback(self, msg):
+        if self.active_source == "web":
+            self.cmd_mux_pub.publish(msg.data)
+
+    def switch_source(self, source):
+        if source == "local":
+            self.active_source = "local"
+        elif source == "web":
+            self.active_source = "web"
+
+if __name__ == '__main__':
+    rospy.init_node('command_mux')
+    mux = CommandMux()
+    rospy.spin()
+```
   
   ### reda
 
