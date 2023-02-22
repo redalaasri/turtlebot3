@@ -229,6 +229,6 @@ while True:
    
    Je vous remercie encore une fois pour cette opportunité et je reste à votre disposition pour toute information complémentaire.
    
-###### Reda   
+ 
 
-**REDA**
+**REDA LAASRI**
