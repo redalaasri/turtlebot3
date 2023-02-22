@@ -8,11 +8,10 @@ Pour ROS 20.04, suivez les instructions sur le site officiel : http://wiki.ros.o
 * Installer la simulation Turtlebot 3 (model burger) :
 Ouvrez un terminal et entrez les commandes suivantes :
 
-```$ sudo apt-get update```
-
-```$ sudo apt-get install ros-melodic-turtlebot3```
-
-```$ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc```
+```$ sudo apt-get update
+   $ sudo apt-get install ros-melodic-turtlebot3*
+   $ echo "export TURTLEBOT3_MODEL=burger" >> ~/.bashrc
+```
 
 Remplacez <distro> par la version de ROS que vous avez installée (par exemple, melodic pour ROS 18.04 ou noetic pour ROS 20.04). Dans mon cas, j'ai installé Ubuntu 18.04 alors <distro> = melodic.
   
@@ -24,7 +23,7 @@ Entrez la commande suivante dans le terminal :
   
 * Créer un environnement de travail:
   
-  Entrer les commandes suivantes dans le terminal:
+Entrer les commandes suivantes dans le terminal:
 
   
   ``` 
@@ -107,7 +106,7 @@ if __name__ == '__main__':
 
 Le nœud "CommandMux" souscrit aux sujets "/cmd_local" et "/cmd_web" pour recevoir les commandes de vitesse provenant de ces sources. Lorsqu'une commande est reçue, le nœud vérifie si la source active correspond à la source de la commande, et si c'est le cas, il publie la commande sur le sujet "/cmd_mux".
 
-La méthode "switch_source" peut être appelée pour changer la source active de la commande, ce qui permet de basculer entre les sources de contrôle. Par exemple, pour basculer vers la source "cmd_web", vous pouvez appeler:
+La méthode "switch_source" peut être appelée pour changer la source active de la commande, ce qui permet de basculer entre les sources de contrôle. Par exemple, pour basculer vers la source "cmd_web", on peut appeler:
   ``` mux.switch_source("web") ```
   
 Cela mettra à jour la variable "active_source" dans le nœud et la prochaine commande de vitesse provenant de "/cmd_web" sera publiée sur le sujet "/cmd_mux".
