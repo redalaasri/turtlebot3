@@ -179,7 +179,7 @@ Notez que ce code suppose que le message MQTT reçu est une chaîne de caractèr
 
    - Côté client non ROS :   
 
-Nous allons développer un script en Python ou en C++ (indépendant de ROS) qui va observer l'appui des touches directionnelles du clavier pour envoyer une consigne de vitesse via une publication MQTT. Le script doit être capable de se connecter au broker MQTT et de publier sur le topic correspondant à la consigne de vitesse.
+Nous allons développer un script en Python qui va observer l'appui des touches directionnelles du clavier pour envoyer une consigne de vitesse via une publication MQTT. Le script doit être capable de se connecter au broker MQTT et de publier sur le topic correspondant à la consigne de vitesse.
 
    ```
    import paho.mqtt.client as mqtt
@@ -215,7 +215,8 @@ while True:
                 # Publier une consigne de rotation négative sur MQTT
                 client.publish("robot/cmd_rot", "-0.5")
 ``` 
-Ce code se connecte au broker MQTT sur "localhost" et publie des messages sur les topics "robot/cmd_vel" et "robot/cmd_rot" en fonction des touches directionnelles appuyées
+
+   Ce code se connecte au broker MQTT sur "localhost" et publie des messages sur les topics "robot/cmd_vel" et "robot/cmd_rot" en fonction des touches directionnelles appuyées
   
 ### Le temps dans chaque question:
    
