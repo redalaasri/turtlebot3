@@ -62,7 +62,7 @@ Ouvrez un autre terminal et entrez la commande suivante :
  
  La commande qui nous permet de contrôler le robot en lui donnat un nav goal 2D:
   
-  ```$ rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: X, y: Y, z: 0}, orientation: {w: 1}}}'
+  ```$ rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: X, y: Y, z: 0}, orientation: {w: 1}}}' ```
 
   
 ## Question 2:
