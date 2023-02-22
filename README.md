@@ -221,6 +221,7 @@ while True:
 ### Le temps dans chaque question:
    
    Après la réception du test, j'ai essayé d'installer Ubuntu 18.04 et ROS-melodic sur ma machine. Ce qui m'as pris 1 jour vu ma machine ne le supporte pas et y avait des problèmes de confusion. En parallèle, je me suis engagé à m'autoformer sur ROS, vu que je n'ai pas travaillé avec depuis plus d'un an. J'ai pris ce challenge de 5 jours pour apprendre à nouveau tous les bases de ROS et résoudre ce test.
+   
    Au début, j'ai pris beaucoup de temps pour résoudre les erreurs de code, et essayer de comprendre la logique de ROS. En fin de compte, j'ai pu dépasser ce problème et résoudre les 3 premières questoins. 
    
    Je tenais à vous remercier pour l'opportunité que vous m'avez offerte de passer ce test. C'était un véritable défi pour moi, mais je suis fier de dire que j'ai donné le meilleur de moi-même.
