@@ -38,7 +38,7 @@ Entrez la commande suivante dans le terminal :
 Entrez les commandes suivantes dans un terminal :
   
 ``` 
-  $ cd ~/catkin_ws/src
+$ cd ~/catkin_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 $ git clone https://github.com/turtlebot/turtlebot.git
 $ git clone https://github.com/turtlebot/turtlebot_msgs.git
@@ -53,7 +53,22 @@ $ catkin_make
 * Contrôler le robot en téléopération (clavier) :
 
 Ouvrez un autre terminal et entrez la commande suivante :
+  
   ```$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch``` 
+ 
+ La commande qui nous permet de contrôler le robot en téléopération:
+  
+  ```$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch``` 
+ 
+ La commande qui nous permet de contrôler le robot en lui donnat un nav goal 2D:
+  
+  ```$ rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: X, y: Y, z: 0}, orientation: {w: 1}}}'
+
+  
+  # Question 2:
+  
+
+  
   ### reda
 
 #### Reda
