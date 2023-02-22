@@ -65,7 +65,7 @@ Ouvrez un autre terminal et entrez la commande suivante :
   ```$ rostopic pub /move_base_simple/goal geometry_msgs/PoseStamped '{header: {stamp: now, frame_id: "map"}, pose: {position: {x: X, y: Y, z: 0}, orientation: {w: 1}}}'
 
   
-  # Question 2:
+## Question 2:
   
 
   
